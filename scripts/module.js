@@ -23,7 +23,7 @@ try {
   registerHooks();
 } catch (err) {
   console.error(
-    "[victory-counter] Failed to register hooks. The module will not " +
+    "[sargas-victory-counter] Failed to register hooks. The module will not " +
       "appear in the scene controls. This usually means a module file is " +
       "damaged or was only partially deployed — reinstall the module folder.",
     err

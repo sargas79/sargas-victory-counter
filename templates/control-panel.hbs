@@ -219,18 +219,18 @@
 
     {{#if circle}}
     <div class="pvc-runes-compact">
-      {{> "modules/victory-counter/templates/rune-circle.hbs"}}
+      {{> "modules/sargas-victory-counter/templates/rune-circle.hbs"}}
     </div>
     {{else if threshold}}
-    {{> "modules/victory-counter/templates/threshold-ladder.hbs"}}
+    {{> "modules/sargas-victory-counter/templates/threshold-ladder.hbs"}}
     {{else if stepped}}
     {{!-- The strip replaces the ring, for the same reason the ladder does: it is
           already this track's readout, and a ring cannot show which step is the
           one that matters. --}}
-    {{> "modules/victory-counter/templates/step-track.hbs"}}
+    {{> "modules/sargas-victory-counter/templates/step-track.hbs"}}
     {{else if ../rings}}
     <div class="pvc-ring-wrap pvc-ring-compact">
-      {{> "modules/victory-counter/templates/progress-ring.hbs" ring=../ring}}
+      {{> "modules/sargas-victory-counter/templates/progress-ring.hbs" ring=../ring}}
     </div>
     {{/if}}
 

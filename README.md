@@ -79,18 +79,18 @@ A track runs in one of two **modes**:
 1. In Foundry, go to **Add-on Modules → Install Module**.
 2. Paste:
 ```
-https://github.com/sargas79/Victory-Counter/releases/latest/download/module.json
+https://github.com/sargas79/sargas-victory-counter/releases/latest/download/module.json
 ```
 3. Click **Install**, then enable the module in your world.
 
 ### Local development
 
 Clone or symlink this repository into your Foundry user data directory under a
-folder named exactly `victory-counter` (the name must match `module.json.id`),
+folder named exactly `sargas-victory-counter` (the name must match `module.json.id`),
 so the path is:
 
 ```
-<FoundryUserData>/Data/modules/victory-counter/
+<FoundryUserData>/Data/modules/sargas-victory-counter/
 ```
 
 Restart Foundry, then enable **Victory Counter** in
@@ -99,7 +99,7 @@ Restart Foundry, then enable **Victory Counter** in
 On Windows, a symlink from an admin PowerShell prompt:
 
 ```powershell
-New-Item -ItemType SymbolicLink -Path "$env:LOCALAPPDATA\FoundryVTT\Data\modules\victory-counter" -Target "C:\path\to\Victory-Counter"
+New-Item -ItemType SymbolicLink -Path "$env:LOCALAPPDATA\FoundryVTT\Data\modules\sargas-victory-counter" -Target "C:\path\to\sargas-victory-counter"
 ```
 
 ## Usage
@@ -289,7 +289,7 @@ on a threshold track an unearned rune stays unnamed until the ladder is revealed
 ### Macro API
 
 ```js
-const vc = game.modules.get("victory-counter").api;
+const vc = game.modules.get("sargas-victory-counter").api;
 
 // A 6-step infiltration, and the alarm working against the party
 const infiltration = await vc.create({ title: "Infiltration Points", target: 6 });
@@ -663,7 +663,7 @@ S13. Reload the world. An existing schema-5 world's tracks come back unchanged,
 
 **Permissions and sync**
 
-45. As a player, try the API: `game.modules.get("victory-counter").api
+45. As a player, try the API: `game.modules.get("sargas-victory-counter").api
     .increase(id)`. It is refused with a GM-only notification.
 46. With a GM and a player connected, change a track on the GM screen. The
     player's HUD updates immediately without a reload.

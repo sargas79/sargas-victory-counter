@@ -1,5 +1,5 @@
 /**
- * Public module API, exposed as `game.modules.get("victory-counter").api`.
+ * Public module API, exposed as `game.modules.get("sargas-victory-counter").api`.
  * Every mutating method is GM-guarded inside the state layer, so macros written
  * by players fail safely with a notification rather than silently doing nothing.
  *
