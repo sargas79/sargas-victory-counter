@@ -3,7 +3,7 @@
  * @module victory-counter/constants
  */
 
-export const MODULE_ID = "victory-counter";
+export const MODULE_ID = "sargas-victory-counter";
 
 /**
  * The id this module shipped under up to and including 3.x, when it was

@@ -175,7 +175,7 @@
     {{!-- The circle carries the value in its own centre, so the linear readout
           above it would be the same number twice. The band name still needs
           saying in words, so it stays as a kicker beneath the plate. --}}
-    {{> "modules/victory-counter/templates/rune-circle.hbs"}}
+    {{> "modules/sargas-victory-counter/templates/rune-circle.hbs"}}
     <span class="pvc-kicker pvc-tone-{{tone}}">{{bandLabel}}</span>
     {{else}}
 
@@ -187,7 +187,7 @@
       <span class="pvc-kicker pvc-tone-{{tone}}">{{bandLabel}}</span>
     </div>
 
-    {{> "modules/victory-counter/templates/threshold-ladder.hbs"}}
+    {{> "modules/sargas-victory-counter/templates/threshold-ladder.hbs"}}
     {{/if}}
 
     {{#if bandDescription}}
@@ -215,7 +215,7 @@
     {{!-- ===== Rune circle ===== --}}
     {{!-- Chosen per track, so it wins over the world-wide ring setting: a GM who
           asked for a circle on this track asked for it on this track. --}}
-    {{> "modules/victory-counter/templates/rune-circle.hbs"}}
+    {{> "modules/sargas-victory-counter/templates/rune-circle.hbs"}}
     {{else if stepped}}
     {{!-- ===== Step readout ===== --}}
     {{!-- The polarity badge and status above are shared with progress mode, so
@@ -234,7 +234,7 @@
       {{/if}}
     </div>
 
-    {{> "modules/victory-counter/templates/step-track.hbs"}}
+    {{> "modules/sargas-victory-counter/templates/step-track.hbs"}}
 
     {{#if currentDescription}}
     <p class="pvc-band-description">{{currentDescription}}</p>
@@ -242,7 +242,7 @@
     {{else if ../rings}}
     {{!-- ===== Ring readout ===== --}}
     <div class="pvc-ring-wrap">
-      {{> "modules/victory-counter/templates/progress-ring.hbs" ring=../ring}}
+      {{> "modules/sargas-victory-counter/templates/progress-ring.hbs" ring=../ring}}
     </div>
     {{else}}
     {{!-- ===== Linear readout ===== --}}
